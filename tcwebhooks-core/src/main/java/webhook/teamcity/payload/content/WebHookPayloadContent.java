@@ -164,7 +164,7 @@ public class WebHookPayloadContent {
     		setTriggeredBy(sRunningBuild.getTriggeredBy().getAsString());
     		setComment(WebHooksComment.build(sRunningBuild.getBuildComment()));
     		setTags(sRunningBuild.getTags());
-    		setChanges(sRunningBuild.getContainingChanges());
+    		//setChanges(sRunningBuild.getContainingChanges());
     		try {
     			if (sRunningBuild.getBranch() != null){
 	    			setBranch(sRunningBuild.getBranch());
